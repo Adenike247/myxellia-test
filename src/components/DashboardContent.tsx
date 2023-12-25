@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Center, Flex, Text, Stack } from "@chakra-ui/react";
-import Emoji from "../assets/images/Rectangle 12749.png";
+import Emoji from "../assets/images/Emoji.png";
 import Divider from "../assets/svg/Divider";
 import PropertyIcon from "../assets/svg/PropertyIcon";
 import OverviewCard from "./OverviewCard";
@@ -13,7 +13,6 @@ const DashboardContent = () => {
     <>
       <Box pl="78px" pr="78px" pt="19px" bg="#FBFCFC">
         <Flex>
-                  {/* <Emoji /> */}
                   <Image src={Emoji} alt="emoji" width="29" height="29"/>
           <Text fontFamily="Euclid Circular B" fontSize="20px" fontWeight="600">
             Hi Ahmed
