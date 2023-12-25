@@ -1,9 +1,8 @@
 import React from "react";
-import styles from "../../styles/Home.module.css";
 import DashCard from "./DashCard";
 import LocationIcon from "../assets/svg/LocationIcon";
 import Users from "../assets/svg/Users";
-import { Flex, Box, Center, Text, Input } from "@chakra-ui/react";
+import { Flex, Box, Input } from "@chakra-ui/react";
 import Wallet from "../assets/svg/Wallet";
 import Request from "../assets/svg/Request";
 import Setting from "../assets/svg/Settings";
@@ -23,22 +22,7 @@ const DashboardNavbar = () => {
       >
         <Flex gap="27px">
           <Flex gap="10px" alignItems="center">
-            <Center
-              h="38"
-              bg="#F5F5F5"
-              pt="10px"
-              pb="10px"
-              pr="21px"
-              pl="22px"
-              borderRadius="8px"
-            >
-              <Flex alignItems="center" gap="4">
-                <DashboardIcon />
-                <Text fontWeight="600" fontSize="14px">
-                  Dashboard
-                </Text>
-              </Flex>
-            </Center>
+            <DashCard icon={<DashboardIcon />} title={"Dashboard"} />
             <DashCard icon={<LocationIcon />} title={"Listings"} />
             <DashCard icon={<Users />} title={"User"} />
             <DashCard icon={<Wallet />} title={"Account"} />
@@ -57,6 +41,7 @@ const DashboardNavbar = () => {
               fontSize="12px"
               fontWeight="300"
               fontFamily="Euclid Circular B"
+              focusBorderColor="transparent" // Set to a transparent color
               bg="#F5F5F5" // Set the background color
               border="1px solid"
               // Set the border thickness
@@ -65,9 +50,8 @@ const DashboardNavbar = () => {
               _placeholder={{
                 color: "#919191", // Set the placeholder color
               }}
-              outline="none"
             />
-            <Box position="relative" right="50px" top="10px">
+            <Box position="relative" right="35px" top="10px" zIndex={2}>
               <Search />
             </Box>
           </Flex>

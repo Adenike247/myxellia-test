@@ -1,6 +1,5 @@
 import React from "react";
 import Add from "../assets/svg/Add";
-import styles from "../../styles/Home.module.css";
 import Calender from "../assets/svg/Calender";
 import Notification from "../assets/svg/Notification";
 import { Box, Flex, Text } from "@chakra-ui/react";
@@ -30,7 +29,7 @@ const MainNavbar = () => {
               For Mainstone
             </Text>
           </Box>
-          <Flex gap="24px">
+          <Flex gap="45px">
             <Flex alignItems="center" gap="24px" cursor="pointer">
               <Add />
               <Calender />

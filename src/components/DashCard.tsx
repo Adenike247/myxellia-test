@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "../../styles/Home.module.css";
 import { Flex,Center,Text,Box } from "@chakra-ui/react";
 type DashCardProps = {
   icon: JSX.Element;
@@ -8,20 +7,18 @@ type DashCardProps = {
 const DashCard = ({ icon, title }: DashCardProps) => {
   return (
     <>
-      {/* <div className={styles.dashCardRoot}> */}
       <Box
-        h="38"
-        pt="10px"
-        pb="10px"
-        pr="30px"
-        pl="32px"
+        pt="7px"
+        pb="7px"
+      
+              width="148px"
         borderRadius="8px"
               bg="#FFF"
               cursor="pointer"
       >
         <Center>
           <Flex alignItems="center" gap="8px">
-            <span>{icon}</span>
+            {icon}
             <Text
               fontSize="14px"
               fontWeight="400"
@@ -34,7 +31,6 @@ const DashCard = ({ icon, title }: DashCardProps) => {
         </Center>
       </Box>
 
-      {/* </div> */}
     </>
   );
 };
