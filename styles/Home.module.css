@@ -1,19 +1,63 @@
-.mainRoot{
-width: 1440px;
-height: 82px;
-flex-shrink: 0;
-background: var(--Black, #191919);
-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.02);
+
+/* .mainRoot {
+  padding: 0px 78px;
+  background:  #191919;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.02);
 }
-.subHeader{
-  color: #FFF;
-/* B7 Regular Proxima */
-font-family: Proxima Nova;
+.pageRoot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 82px;
+  flex-shrink: 0;
+} */
+/* .subHeader {
+  color: #fff;
+  font-family: Proxima Nova;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.rightSide {
+  display: inline-flex;
+  gap: 24px;
+}
+.iconContainer {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.profileContainer {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.userName {
+  color: var(--Main-White, #fff);
+  font-family: Euclid Circular B;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.dashRoot{
+    padding: 0px 78px;
+}
+.textArea{
+color: var(--Deep-Gray, #3D3D3D);
+
+font-family: Euclid Circular B;
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
 }
+.dashCardRoot{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+} */
 /* .container {
   padding: 0 2rem;
 }

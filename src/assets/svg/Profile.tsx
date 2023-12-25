@@ -1,6 +1,6 @@
 import React from 'react'
 
-const profile = () => {
+const Profile = () => {
   return (
     <>
       <svg
@@ -45,4 +45,4 @@ const profile = () => {
   );
 }
 
-export default profile
+export default Profile
