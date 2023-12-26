@@ -54,8 +54,17 @@ const OverviewCard = ({ icon, title, data }: OverviewProps) => {
                 height="79px"
                 justifyContent="center"
               >
-                <Box textAlign="center">{item.value}</Box>
-                <Box>{item.text}</Box>
+                <Box
+                  fontSize="24px"
+                  fontWeight="600"
+                  fontFamily="Euclid Circular B"
+                  color="#191919"
+                >
+                  {item.value}
+                </Box>
+                <Box fontSize="14px" fontWeight="400" color="#606060">
+                  {item.text}
+                </Box>
               </Box>
             </>
           ))}
