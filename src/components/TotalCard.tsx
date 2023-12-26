@@ -1,5 +1,5 @@
-import { Box, Text, Flex, } from "@chakra-ui/react";
 import React from "react";
+import { Box, Text, Flex } from "@chakra-ui/react";
 import NextIcon from "../assets/svg/NextIcon";
 import ImageIcon from "../assets/svg/ImageIcon";
 import PreviewIcon from "../assets/svg/PreviewIcon";

@@ -1,13 +1,12 @@
-import { Box, Flex, Text } from "@chakra-ui/react";
 import React from "react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 import MostImg from "../assets/svg/MostImg";
 
 const MostCard = () => {
   return (
     <>
       <Box>
-        <Box >
-          
+        <Box>
           <Flex mt="10px" gap="14px">
             <Box
               width="67px"
