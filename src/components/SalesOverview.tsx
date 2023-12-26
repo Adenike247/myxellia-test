@@ -1,25 +1,21 @@
 import React from "react";
-import { Box, Center, Flex, Text} from "@chakra-ui/react";
+import { Box, Center, Flex, Text } from "@chakra-ui/react";
 import SalesCard from "./SalesCard";
 import LeftControl from "../assets/svg/LeftControl";
-import Divider from "../assets/svg/Divider";
 import RightControl from "../assets/svg/RightControl";
 const SalesOverview = () => {
   return (
     <>
       <Box
         width="856px"
-        height="325px"
-        pl="22px"
-        pr="23px"
+        pb="18px"
         borderRadius="16px"
         bg="#fff"
         boxShadow="0px 4px 8px 0px rgba(0, 0, 0, 0.02)"
       >
-        <Flex justifyContent="space-between">
+        <Flex justifyContent="space-between" pl="22px" pt="16px" pr="23px">
           <Box>
             <Text
-              pt="16px"
               fontSize="20px"
               fontFamily="Euclid Circular B"
               fontWeight="600"
@@ -46,13 +42,17 @@ const SalesOverview = () => {
               width="177px"
               mt="20px"
               marginLeft="auto"
-              display="flex"
               flexDirection="column"
-              alignItems="center"
-              justifyContent="center"
+              display="grid"
+              placeItems="center"
             >
               <Box>
-                <Text fontWeight="500" fontSize="14px" color="#CBCBCB">
+                <Text
+                  fontWeight="500"
+                  fontSize="14px"
+                  color="#CBCBCB"
+                  fontFamily="Euclid Circular B"
+                >
                   View Transactions
                 </Text>
               </Box>
@@ -64,7 +64,7 @@ const SalesOverview = () => {
               color="#3D3D3D"
               pt="17px"
             >
-              <Flex gap="12px">
+              <Flex gap="12px" alignItems="center">
                 <Box pl="18px" pr="17px" pt="7px" pb="8px" borderRadius="8px">
                   <Center>
                     <Text>1 Week</Text>
@@ -95,73 +95,77 @@ const SalesOverview = () => {
         </Flex>
 
         <Box
-          mt="20px"
+          mt="12px"
           height="1px"
           width="100%"
           bg="#E4E4E4"
           pl="0px"
           pr="0px"
         ></Box>
-        <Flex>
-          <Flex>
-            <Flex gap="53px" mt="76px">
+        <Flex justifyContent="space-between" pl="8px" pr="22px" alignItems="center">
+          <Box
+            display="flex"
+            alignItems="center"
+            justifyContent="space-between"
+          >
+            <Box
+              width="18px"
+              height="18px"
+              borderRadius="50%"
+              bg="#F5F5F5"
+              display="grid"
+              placeItems="center"
+            >
+              <LeftControl />
+            </Box>
+            <Box mt="65px">
               <Box
-                width="18px"
-                height="18px"
-                borderRadius="50%"
-                bg="#F5F5F5"
+                height="1px"
+                width="311px"
+                bg="#E4E4E4"
+                alignSelf="flex-end"
+              ></Box>
+              <Box
                 display="flex"
-                alignItems="center"
-                justifyContent="center"
+                gap="14px"
+                fontSize="10px"
+                fontFamily="Euclid Circular B"
+                fontWeight="500"
+                mt="6px"
+                color="#919191"
+                marginLeft="10px"
               >
-                <LeftControl />
+                <Text>Jan</Text>
+                <Text>Feb</Text>
+                <Text>Mar</Text>
+                <Text>Apr</Text>
+                <Text>May</Text>
+                <Text>Jun</Text>
+                <Text>Jul</Text>
+                <Text>Aug</Text>
+                <Text>Sep</Text>
               </Box>
-              <Box mt="65px">
-                <Box
-                  height="1px"
-                  width="311px"
-                  bg="#E4E4E4"
-                  alignSelf="flex-end"
-                ></Box>
-                <Box
-                  display="flex"
-                  gap="14px"
-                  fontSize="10px"
-                  fontFamily="Euclid Circular B"
-                  fontWeight="500"
-                  mt="6px"
-                  color="#919191"
-                  marginLeft="10px"
-                >
-                  <Text>Jan</Text>
-                  <Text>Feb</Text>
-                  <Text>Mar</Text>
-                  <Text>Apr</Text>
-                  <Text>May</Text>
-                  <Text>Jun</Text>
-                  <Text>Jul</Text>
-                  <Text>Aug</Text>
-                  <Text>Sep</Text>
-                </Box>
-              </Box>
+            </Box>
+            <Box
+              height="163px"
+              borderLeftRadius="12px"
+              width="50px"
+              boxShadow="0px 0px 8px 0px rgba(0, 0, 0, 0.02)"
+              display="grid"
+              placeItems="center"
+            >
               <Box
                 width="18px"
                 height="18px"
                 borderRadius="50%"
                 bg="#F5F5F5"
-                position="relative"
-                left="50px"
-                display="flex"
-                alignItems="center"
-                justifyContent="center"
+                display="grid"
+                placeItems="center"
               >
                 <RightControl />
               </Box>
-            </Flex>
-            <Box>
-              <Divider />
             </Box>
-          </Flex>
+          </Box>
           <SalesCard />
         </Flex>
       </Box>

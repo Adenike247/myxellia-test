@@ -18,8 +18,8 @@ const OverviewCard = ({ icon, title, data }: OverviewProps) => {
         boxShadow="0px 4px 8px 0px rgba(0, 0, 0, 0.02)"
         pl="17px"
         pr="15px"
-        pt="17px"
-        pb="16px"
+        pt="15px"
+        pb="15px"
         width="407px"
       >
         <Flex justifyContent="space-between" alignItems="center">
@@ -39,7 +39,7 @@ const OverviewCard = ({ icon, title, data }: OverviewProps) => {
             <NextIcon />
           </Flex>
         </Flex>
-        <Flex mt="62px" gap="12px">
+        <Flex mt="25px" gap="12px">
           {data.map((item) => (
             <>
               <Box

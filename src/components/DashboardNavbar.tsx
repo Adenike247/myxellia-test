@@ -24,7 +24,7 @@ const DashboardNavbar = () => {
           <Flex gap="10px" alignItems="center">
             <DashCard icon={<DashboardIcon />} title={"Dashboard"} />
             <DashCard icon={<LocationIcon />} title={"Listings"} />
-            <DashCard icon={<Users />} title={"User"} />
+            <DashCard icon={<Users />} title={"Users"} />
             <DashCard icon={<Wallet />} title={"Account"} />
             <DashCard icon={<Request />} title={"Request"} />
             <DashCard icon={<Setting />} title={"Settings"} />
@@ -36,7 +36,7 @@ const DashboardNavbar = () => {
               pb="14px"
               pr="16px"
               width="319px"
-              height="43px"
+              // height="43px"
               placeholder="Search... properties, customers here"
               fontSize="12px"
               fontWeight="300"
