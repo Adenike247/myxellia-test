@@ -28,7 +28,7 @@ const DashboardContent = () => {
         >
           Welcome to your Dashboard
         </Text>
-        <Box display="flex"  gap="21px" mt="20px">
+        <Box display="flex" alignItems="center"  gap="21px" mt="20px">
           <SalesOverview />
           <Box>
             <OverviewCard
