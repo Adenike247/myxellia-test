@@ -1,8 +1,9 @@
 import React from "react";
 import { Box, Center, Flex, Text } from "@chakra-ui/react";
-import SalesCard from "./SalesCard";
 import LeftControl from "../assets/svg/LeftControl";
 import RightControl from "../assets/svg/RightControl";
+import SalesPage from "./SalesPage";
+import { calender } from "../data";
 const SalesOverview = () => {
   return (
     <>
@@ -102,50 +103,52 @@ const SalesOverview = () => {
           pl="0px"
           pr="0px"
         ></Box>
-        <Flex justifyContent="space-between" pl="8px" pr="22px" alignItems="center">
-          <Box
-            display="flex"
-            alignItems="center"
-            justifyContent="space-between"
-          >
-            <Box
-              width="18px"
-              height="18px"
-              borderRadius="50%"
-              bg="#F5F5F5"
-              display="grid"
-              placeItems="center"
-            >
-              <LeftControl />
-            </Box>
-            <Box mt="65px">
+        <Flex
+          justifyContent="space-between"
+          pl="8px"
+          pr="22px"
+          alignItems="center"
+        >
+          <Box display="flex" alignItems="center">
+            <Flex gap="55px" alignItems="center">
               <Box
-                height="1px"
-                width="311px"
-                bg="#E4E4E4"
-                alignSelf="flex-end"
-              ></Box>
-              <Box
-                display="flex"
-                gap="14px"
-                fontSize="10px"
-                fontFamily="Euclid Circular B"
-                fontWeight="500"
-                mt="6px"
-                color="#919191"
-                marginLeft="10px"
+                width="18px"
+                height="18px"
+                borderRadius="50%"
+                bg="#F5F5F5"
+                display="grid"
+                placeItems="center"
               >
-                <Text>Jan</Text>
-                <Text>Feb</Text>
-                <Text>Mar</Text>
-                <Text>Apr</Text>
-                <Text>May</Text>
-                <Text>Jun</Text>
-                <Text>Jul</Text>
-                <Text>Aug</Text>
-                <Text>Sep</Text>
+                <LeftControl />
               </Box>
-            </Box>
+              <Box>
+                <Box
+                  height="1px"
+                  width="311px"
+                  bg="#E4E4E4"
+                  alignSelf="flex-end"
+                  mt="10rem"
+                ></Box>
+                <>
+                  <Box
+                    display="flex"
+                    gap="14px"
+                    fontSize="10px"
+                    fontFamily="Euclid Circular B"
+                    fontWeight="500"
+                    mt="6px"
+                    color="#919191"
+                    marginLeft="10px"
+                  >
+                    {calender.map((item) => (
+                      <>
+                        <Text>{item}</Text>
+                      </>
+                    ))}
+                  </Box>
+                </>
+              </Box>
+            </Flex>
             <Box
               height="163px"
               borderLeftRadius="12px"
@@ -166,7 +169,7 @@ const SalesOverview = () => {
               </Box>
             </Box>
           </Box>
-          <SalesCard />
+          <SalesPage />
         </Flex>
       </Box>
     </>

@@ -32,9 +32,15 @@ export const customers = [
         
     },
          {
-        text: "InActive",
+        text: "Inactive",
         value: "0",
         
     },
+         
 ]
+export const calender=[
+    "Jan" , "Feb", "Mar","Apr","May","Jun","Jul","Aug","Sep"
+  
+]
+
   

@@ -4,7 +4,8 @@ import styles from '../styles/Home.module.css'
 import MainNavbar from '../src/components/MainNavbar'
 import DashboardNavbar from '../src/components/DashboardNavbar'
 import DashboardContent from '../src/components/DashboardContent'
-
+import Footer from '../src/components/Footer'
+import styled from "../styles/Calender.module.css"
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
       <MainNavbar />
       <DashboardNavbar />
       <DashboardContent />
+      <Footer/>
     </div>
   )
 }

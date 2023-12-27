@@ -16,6 +16,122 @@ a {
   box-sizing: border-box;
 
 }
+.text-center{
+    font-size: 14px;
+    text-align: center;
+}
+.react-calendar { 
+ background: #0D0D0D!important;
+ color: #FFF;
+ font-family: "Euclid Circular B";
+ border: "0px solid"!important;
+}
+.react-calendar__month-view__days__day{
+  background: "none";
+  border-radius: "none";
+}
+.react-calendar__navigation__label__labelText--from{
+  font-weight: "600";
+  font-size: "16px";
+}
+.react-calendar__month-view__weekdays__weekday{
+  white-space: nowrap;
+  text-decoration: none;
+}
+.react-calendar__month-view__days__day--neighboringMonth{
+  color: #FFF;
+  font-weight: 500;
+}
+.react-calendar__navigation button {
+ color: #FFF;
+ min-width: 44px;
+ background: none;
+ font-size: 16px;
+ margin-top: 8px;
+ 
+}
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+ background-color: #f8f8fa;
+}
+.react-calendar__month-view__weekdays__weekday{
+  white-space: "nowrap"!important;
+}
+.react-calendar__navigation button[disabled] {
+ background-color: #f0f0f0;
+}
+abbr[title] {
+ text-decoration: none;
+}
+.react-calendar__month-view__days__day--weekend {
+ color: #FFF !important;
+}
+
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+ background: #f8f8fa;
+ color: #FFF;
+ border-radius: 6px;
+}
+.react-calendar__tile--now {
+ background: #6f48eb33;
+ border-radius: 6px;
+ font-weight: bold;
+ color: #FFF ;
+}
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+ background: #6f48eb33;
+ border-radius: 6px;
+ font-weight: bold;
+ color: #FFF ;
+}
+.react-calendar__tile--hasActive:enabled:hover,
+.react-calendar__tile--hasActive:enabled:focus {
+ background: #f8f8fa;
+}
+.react-calendar__tile--active {
+ background: #FFF;
+ border-radius: 6px;
+ font-weight: bold;
+ color: white;
+}
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+ background: #FFF ;
+ color: white;
+}
+.react-calendar--selectRange .react-calendar__tile--hover {
+ background-color: #f8f8fa;
+}
+.react-calendar__tile--range {
+ background: #f8f8fa;
+ color: #FFF;
+ border-radius: 0;
+}
+.react-calendar__navigation__next2-button{
+  display: none;
+}
+.react-calendar__navigation__prev2-button{
+  display: none;
+}
+.react-calendar__tile--rangeStart {
+ border-top-right-radius: 0;
+ border-bottom-right-radius: 0;
+ border-top-left-radius: 6px;
+ border-bottom-left-radius: 6px;
+ background: #FFF;
+ color: white;
+}
+.react-calendar__tile--rangeEnd {
+ border-top-left-radius: 0;
+ border-bottom-left-radius: 0;
+ border-top-right-radius: 6px;
+ border-bottom-right-radius: 6px;
+ background: #FFF;
+ color: white !important;
+}
+
 
 @media (prefers-color-scheme: dark) {
   html {

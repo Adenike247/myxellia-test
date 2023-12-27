@@ -14,7 +14,6 @@ const ListingOverview = () => {
         pr="16px"
         pt="13px"
         pb="14px"
-        // width="475px"
       >
         <Text fontWeight="600" fontSize="18px" fontFamily="Euclid Circular B">
           Listing Overview
@@ -30,7 +29,7 @@ const ListingOverview = () => {
               Most viewed
             </Text>
             <Box width="206px" height="1px" bg="#E4E4E4" mt="4px"></Box>
-            <MostCard />
+            <MostCard borderColor="#12D8A0" />
           </Box>
           <Box>
             <Text
@@ -42,7 +41,7 @@ const ListingOverview = () => {
               Most viewed
             </Text>
             <Box width="206px" height="1px" bg="#E4E4E4" mt="4px"></Box>
-            <MostCard />
+            <MostCard borderColor="#4545FE" />
           </Box>
         </Flex>
         <Box width="437px" borderRadius="12px" bg="#F5F5F5" mt="15px">
@@ -61,7 +60,7 @@ const ListingOverview = () => {
                 justifyContent="space-between"
                 alignItems="center"
               >
-                <MostCard />
+                <MostCard borderColor="#FF9103" />
                 <Box
                   pt="11px"
                   pl="15px"
@@ -71,7 +70,6 @@ const ListingOverview = () => {
                   borderRadius="12px"
                   border="1px solid"
                   borderColor="#E4E4E4"
-                //   height="68px"
                   width="189px"
                 >
                   <Flex justifyContent="space-between">

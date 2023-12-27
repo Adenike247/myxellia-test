@@ -5,10 +5,11 @@ import ImageIcon from "../assets/svg/ImageIcon";
 import PreviewIcon from "../assets/svg/PreviewIcon";
 import TotalNextIcon from "../assets/svg/TotalNextIcon";
 
-const TotalCard = () => {
+const OutstandingCard = () => {
   return (
     <>
       <Box
+        width="418px"
         bg="#FFF"
         boxShadow="0px 4px 8px 0px rgba(0, 0, 0, 0.02)"
         borderRadius="16px"
@@ -16,7 +17,6 @@ const TotalCard = () => {
         pr="18px"
         pt="25px"
         pb="18px"
-        //   width="418px"
       >
         <Box
           display="flex"
@@ -43,7 +43,14 @@ const TotalCard = () => {
                 .00
               </Text>
             </Box>
-            <Text pt="4px">Total Outstanding Balance</Text>
+            <Text
+              pt="4px"
+              fontSize="14px"
+              fontWeight="400"
+              fontFamily="Euclid Circular B"
+            >
+              Total Outstanding Balance
+            </Text>
           </Box>
           <Flex alignContent="center" gap="2px">
             <Text
@@ -97,7 +104,7 @@ const TotalCard = () => {
               mt="25px"
               alignItems="center"
               position="relative"
-              left="65%"
+              left="55%"
             >
               <Text>1/5</Text>
               <Flex gap="8px">
@@ -132,4 +139,4 @@ const TotalCard = () => {
   );
 };
 
-export default TotalCard;
+export default OutstandingCard;

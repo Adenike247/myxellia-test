@@ -7,13 +7,14 @@ import { customers, property } from "../data";
 import PropertyProfile from "../assets/svg/PropertyProfile";
 import Image from "next/image";
 import SalesOverview from "./SalesOverview";
-import TotalSection from "./TotalSection";
 import ListingOverview from "./ListingOverview";
+import SoldCard from "./SoldCard";
+import OutstandingCard from "./OutstandingCard";
 
 const DashboardContent = () => {
   return (
     <>
-      <Box pl="78px" pr="78px" pt="19px" bg="#FBFCFC">
+      <Box pl="78px" pr="78px" pt="19px" bg="#FBFCFC" pb="28px">
         <Flex gap="4px">
           <Image src={Emoji} alt="emoji" width="29" height="29" />
           <Text fontFamily="Euclid Circular B" fontSize="20px" fontWeight="600">
@@ -47,7 +48,9 @@ const DashboardContent = () => {
         </Box>
         <Box display="flex" gap="20px" mt="20px">
           <ListingOverview />
-          <TotalSection />
+          <OutstandingCard/>
+          <SoldCard />
+          
         </Box>
       </Box>
     </>

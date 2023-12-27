@@ -8,6 +8,7 @@ import Request from "../assets/svg/Request";
 import Setting from "../assets/svg/Settings";
 import DashboardIcon from "../assets/svg/DashboardIcon";
 import Search from "../assets/svg/Search";
+
 const DashboardNavbar = () => {
   return (
     <>
@@ -22,12 +23,42 @@ const DashboardNavbar = () => {
       >
         <Flex gap="27px">
           <Flex gap="10px" alignItems="center">
-            <DashCard icon={<DashboardIcon />} title={"Dashboard"} />
-            <DashCard icon={<LocationIcon />} title={"Listings"} />
-            <DashCard icon={<Users />} title={"Users"} />
-            <DashCard icon={<Wallet />} title={"Account"} />
-            <DashCard icon={<Request />} title={"Request"} />
-            <DashCard icon={<Setting />} title={"Settings"} />
+            <DashCard
+              backgroundColor="#F5F5F5"
+              fontWeight="600"
+              icon={<DashboardIcon />}
+              title={"Dashboard"}
+            />
+            <DashCard
+              backgroundColor="#FFF"
+              icon={<LocationIcon />}
+              fontWeight="400"
+              title={"Listings"}
+            />
+            <DashCard
+              fontWeight="400"
+              backgroundColor="#FFF"
+              icon={<Users />}
+              title={"Users"}
+            />
+            <DashCard
+              fontWeight="400"
+              backgroundColor="#FFF"
+              icon={<Wallet />}
+              title={"Account"}
+            />
+            <DashCard
+              fontWeight="400"
+              backgroundColor="#FFF"
+              icon={<Request />}
+              title={"Request"}
+            />
+            <DashCard
+              fontWeight="400"
+              backgroundColor="#FFF"
+              icon={<Setting />}
+              title={"Settings"}
+            />
           </Flex>
           <Flex>
             <Input
