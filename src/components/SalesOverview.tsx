@@ -109,8 +109,8 @@ const SalesOverview = () => {
           pr="22px"
           alignItems="center"
         >
-          <Box display="flex" alignItems="center">
-            <Flex gap="55px" alignItems="center">
+          <Box display="flex" alignItems="center" >
+            <Flex gap="55px" alignItems="center"mr="10px">
               <Box
                 width="18px"
                 height="18px"
@@ -124,7 +124,7 @@ const SalesOverview = () => {
               <Box>
                 <Box
                   height="1px"
-                  width="311px"
+                  width="100%"
                   bg="#E4E4E4"
                   alignSelf="flex-end"
                   mt="10rem"
@@ -138,7 +138,7 @@ const SalesOverview = () => {
                     fontWeight="500"
                     mt="6px"
                     color="#919191"
-                    marginLeft="10px"
+                    ml="20px"
                   >
                     {calender.map((item) => (
                       <>
