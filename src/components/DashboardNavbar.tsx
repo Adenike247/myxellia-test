@@ -67,7 +67,6 @@ const DashboardNavbar = () => {
               pb="14px"
               pr="16px"
               width="319px"
-              // height="43px"
               placeholder="Search... properties, customers here"
               fontSize="12px"
               fontWeight="300"
