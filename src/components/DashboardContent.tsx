@@ -17,7 +17,12 @@ const DashboardContent = () => {
       <Box pl="78px" pr="78px" pt="19px" bg="#FBFCFC" pb="28px">
         <Flex gap="4px">
           <Image src={Emoji} alt="emoji" width="29" height="29" />
-          <Text fontFamily="Euclid Circular B" fontSize="20px" fontWeight="600">
+          <Text
+            fontFamily="Euclid Circular B"
+            fontSize="20px"
+            fontWeight="600"
+            color="#191919"
+          >
             Hi Ahmed
           </Text>
         </Flex>
@@ -25,11 +30,12 @@ const DashboardContent = () => {
           fontFamily="Euclid Circular B"
           fontSize="12px"
           fontWeight="400"
-          color=" #919191"
+          color=" #3D3D3D"
+          pt="12px"
         >
           Welcome to your Dashboard
         </Text>
-        <Box display="flex" alignItems="center"  gap="21px" mt="20px">
+        <Box display="flex" alignItems="center" gap="21px" mt="20px">
           <SalesOverview />
           <Box>
             <OverviewCard
@@ -48,9 +54,8 @@ const DashboardContent = () => {
         </Box>
         <Box display="flex" gap="20px" mt="20px">
           <ListingOverview />
-          <OutstandingCard/>
+          <OutstandingCard />
           <SoldCard />
-          
         </Box>
       </Box>
     </>

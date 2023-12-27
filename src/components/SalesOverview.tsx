@@ -36,7 +36,10 @@ const SalesOverview = () => {
           </Box>
           <Box>
             <Box
-              height="46px"
+              pt="16px"
+              pb="16px"
+              pl="37px"
+              pr="37px"
               borderRadius="12px"
               border="1px solid"
               borderColor="#CBCBCB"
@@ -50,9 +53,11 @@ const SalesOverview = () => {
               <Box>
                 <Text
                   fontWeight="500"
-                  fontSize="14px"
+                  fontSize="12px"
                   color="#CBCBCB"
                   fontFamily="Euclid Circular B"
+                  textAlign="center"
+                  whiteSpace="nowrap"
                 >
                   View Transactions
                 </Text>
@@ -109,8 +114,8 @@ const SalesOverview = () => {
           pr="22px"
           alignItems="center"
         >
-          <Box display="flex" alignItems="center" >
-            <Flex gap="55px" alignItems="center"mr="10px">
+          <Box display="flex" alignItems="center">
+            <Flex gap="55px" alignItems="center" mr="10px">
               <Box
                 width="18px"
                 height="18px"
