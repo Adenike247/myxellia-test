@@ -13,8 +13,7 @@ const SalesOverview = () => {
         borderRadius="16px"
         bg="#fff"
         boxShadow="0px 4px 8px 0px rgba(0, 0, 0, 0.02)"
-        width={{ lg: "856px" }}
-        pr={{ base: "55px", lg: "0px" }}
+        width={{ lg: "856px", base: "500px" }}
       >
         <Flex justifyContent="space-between" pl="22px" pt="16px" pr="23px">
           <Box>
