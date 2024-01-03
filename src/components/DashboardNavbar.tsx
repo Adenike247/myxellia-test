@@ -60,31 +60,33 @@ const DashboardNavbar = () => {
               title={"Settings"}
             />
           </Flex>
-          <Flex>
-            <Input
-              type="text"
-              pt="14px"
-              pb="14px"
-              pr="16px"
-              width="319px"
-              placeholder="Search... properties, customers here"
-              fontSize="12px"
-              fontWeight="300"
-              fontFamily="Euclid Circular B"
-              focusBorderColor="transparent" // Set to a transparent color
-              bg="#F5F5F5" // Set the background color
-              border="1px solid"
-              // Set the border thickness
-              borderColor="#E4E4E4" // Set the border color
-              borderRadius="12px" // Set the border radius
-              _placeholder={{
-                color: "#919191", // Set the placeholder color
-              }}
-            />
-            <Box position="relative" right="35px" top="10px" zIndex={2}>
-              <Search />
-            </Box>
-          </Flex>
+          <Box display={{ md:"none", sm:"none", lg:"inline", base:"none" }}>
+            <Flex>
+              <Input
+                type="text"
+                pt="14px"
+                pb="14px"
+                pr="16px"
+                width="319px"
+                placeholder="Search... properties, customers here"
+                fontSize="12px"
+                fontWeight="300"
+                fontFamily="Euclid Circular B"
+                focusBorderColor="transparent" // Set to a transparent color
+                bg="#F5F5F5" // Set the background color
+                border="1px solid"
+                // Set the border thickness
+                borderColor="#E4E4E4" // Set the border color
+                borderRadius="12px" // Set the border radius
+                _placeholder={{
+                  color: "#919191", // Set the placeholder color
+                }}
+              />
+              <Box position="relative" right="35px" top="10px" zIndex={2}>
+                <Search />
+              </Box>
+            </Flex>
+          </Box>
         </Flex>
       </Box>
     </>

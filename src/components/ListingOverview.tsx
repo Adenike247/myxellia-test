@@ -13,7 +13,8 @@ const ListingOverview = () => {
         pl="22px"
         pr="16px"
         pt="13px"
-        pb="14px"
+        pb="38px"
+        width={{ base: "387px", lg: "485px" }}
       >
         <Text fontWeight="600" fontSize="18px" fontFamily="Euclid Circular B">
           Listing Overview
@@ -28,7 +29,12 @@ const ListingOverview = () => {
             >
               Most viewed
             </Text>
-            <Box width="206px" height="1px" bg="#E4E4E4" mt="4px"></Box>
+            <Box
+              width={{ lg: "206px", base: "160px" }}
+              height="1px"
+              bg="#E4E4E4"
+              mt="4px"
+            ></Box>
             <MostCard borderColor="#12D8A0" />
           </Box>
           <Box>
@@ -40,11 +46,21 @@ const ListingOverview = () => {
             >
               Most viewed
             </Text>
-            <Box width="206px" height="1px" bg="#E4E4E4" mt="4px"></Box>
+            <Box
+              width={{ lg: "206px", base: "160px" }}
+              height="1px"
+              bg="#E4E4E4"
+              mt="4px"
+            ></Box>
             <MostCard borderColor="#4545FE" />
           </Box>
         </Flex>
-        <Box width="437px" borderRadius="12px" bg="#F5F5F5" mt="15px">
+        <Box
+          width={{ lg: "377px", base: "350px" }}
+          borderRadius="12px"
+          bg="#F5F5F5"
+          mt="15px"
+        >
           <Box pt="10px" pl="11px" pr="15px" pb="10px">
             <Box>
               <Text

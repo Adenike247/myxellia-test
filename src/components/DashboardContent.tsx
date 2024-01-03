@@ -14,7 +14,13 @@ import OutstandingCard from "./OutstandingCard";
 const DashboardContent = () => {
   return (
     <>
-      <Box pl="78px" pr="78px" pt="19px" bg="#FBFCFC" pb="28px">
+      <Box
+        pl={{ lg: "78px", base: "20px" }}
+        pr={{ lg: "78px", base: "20px" }}
+        pt="19px"
+        bg="#FBFCFC"
+        pb="28px"
+      >
         <Flex gap="4px">
           <Image src={Emoji} alt="emoji" width="29" height="29" />
           <Text
@@ -35,9 +41,16 @@ const DashboardContent = () => {
         >
           Welcome to your Dashboard
         </Text>
-        <Box display="flex" alignItems="center" gap="21px" mt="20px">
+        <Box
+          display="flex"
+          alignItems="center"
+          gap={{ lg: "21px", md: "8px" }}
+          mt="20px"
+        >
           <SalesOverview />
-          <Box>
+          <Box
+            display={{ base: "none", lg: "inline", md: "inline", sm: "none" }}
+          >
             <OverviewCard
               icon={<PropertyIcon />}
               title="Property Overview"
@@ -52,10 +65,27 @@ const DashboardContent = () => {
             </Box>
           </Box>
         </Box>
-        <Box display="flex" gap="20px" mt="20px">
-          <ListingOverview />
-          <OutstandingCard />
-          <SoldCard />
+        <Box>
+          <Box
+            display={{
+              lg: "flex",
+              base: "inline",
+              md: "inline",
+              // sm: "inline",
+            }}
+            gap="20px"
+            mt="20px"
+          >
+            <Box mt={{ base: "20px", md: "20px", sm: "20px", lg: "0px" }}>
+              <ListingOverview />
+            </Box>
+            <Box mt={{ base: "20px", md: "20px", sm: "20px", lg: "0px" }}>
+              <OutstandingCard />
+            </Box>
+            <Box mt={{ base: "20px", md: "20px", sm: "20px", lg: "0px" }}>
+              <SoldCard />
+            </Box>
+          </Box>
         </Box>
       </Box>
     </>

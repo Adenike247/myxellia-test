@@ -8,11 +8,13 @@ const SalesOverview = () => {
   return (
     <>
       <Box
-        width="856px"
+        maxWidth="856px"
         pb="18px"
         borderRadius="16px"
         bg="#fff"
         boxShadow="0px 4px 8px 0px rgba(0, 0, 0, 0.02)"
+        width={{ lg: "856px" }}
+        pr={{ base: "55px", lg: "0px" }}
       >
         <Flex justifyContent="space-between" pl="22px" pt="16px" pr="23px">
           <Box>
@@ -34,7 +36,7 @@ const SalesOverview = () => {
               Showing overview Jan 2022 - Sep 2022
             </Text>
           </Box>
-          <Box>
+          <Box display={{ base: "none", lg: "inline" }}>
             <Box
               pt="16px"
               pb="16px"
@@ -116,15 +118,17 @@ const SalesOverview = () => {
         >
           <Box display="flex" alignItems="center">
             <Flex gap="55px" alignItems="center" mr="10px">
-              <Box
-                width="18px"
-                height="18px"
-                borderRadius="50%"
-                bg="#F5F5F5"
-                display="grid"
-                placeItems="center"
-              >
-                <LeftControl />
+              <Box display={{ lg: "inline", base: "none", md: "inline" }}>
+                <Box
+                  width="18px"
+                  height="18px"
+                  borderRadius="50%"
+                  bg="#F5F5F5"
+                  display="grid"
+                  placeItems="center"
+                >
+                  <LeftControl />
+                </Box>
               </Box>
               <Box>
                 <Box
@@ -154,27 +158,31 @@ const SalesOverview = () => {
                 </>
               </Box>
             </Flex>
-            <Box
-              height="163px"
-              borderLeftRadius="12px"
-              width="50px"
-              boxShadow="0px 0px 8px 0px rgba(0, 0, 0, 0.02)"
-              display="grid"
-              placeItems="center"
-            >
+            <Box display={{ lg: "inline", base: "none", md: "inline" }}>
               <Box
-                width="18px"
-                height="18px"
-                borderRadius="50%"
-                bg="#F5F5F5"
+                height="163px"
+                borderLeftRadius="12px"
+                width="50px"
+                boxShadow="0px 0px 8px 0px rgba(0, 0, 0, 0.02)"
                 display="grid"
                 placeItems="center"
               >
-                <RightControl />
+                <Box
+                  width="18px"
+                  height="18px"
+                  borderRadius="50%"
+                  bg="#F5F5F5"
+                  display="grid"
+                  placeItems="center"
+                >
+                  <RightControl />
+                </Box>
               </Box>
             </Box>
           </Box>
-          <SalesPage />
+          <Box display={{ base: "none", lg: "inline" }}>
+            <SalesPage />
+          </Box>
         </Flex>
       </Box>
     </>

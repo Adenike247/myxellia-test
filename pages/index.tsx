@@ -6,6 +6,7 @@ import DashboardNavbar from '../src/components/DashboardNavbar'
 import DashboardContent from '../src/components/DashboardContent'
 import Footer from '../src/components/Footer'
 import styled from "../styles/Calender.module.css"
+import { Box } from '@chakra-ui/react'
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
@@ -15,11 +16,13 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <MainNavbar />
-      <DashboardNavbar />
+      <Box display={{md:"none" , lg:"inline", sm:"none" ,base:"none"}}>
+        <DashboardNavbar />
+      </Box>
       <DashboardContent />
-      <Footer/>
+      <Footer />
     </div>
-  )
+  );
 }
 
 export default Home

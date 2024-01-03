@@ -26,96 +26,102 @@ const MainNavbar = () => {
   const btnRef = React.useRef(null);
   return (
     <>
-      <Box
-        pl="78px"
-        pr="78px"
-        pt="22px"
-        pb="22px"
-        bg="#191919"
-        boxShadow="0px 4px 8px 0px rgba(0, 0, 0, 0.02)"
-      >
-        <Flex alignItems="center" justifyContent="space-between">
-          <Box cursor="pointer">
-            <VeergeLogo />
-            <Text
-              fontSize="14px"
-              fontWeight="400"
-              color="#FFF"
-              fontFamily="Proxima Nova"
-            >
-              For Mainstone
-            </Text>
-          </Box>
-          <Flex gap="45px">
-            <Flex alignItems="center" gap="24px" cursor="pointer">
-              <Add />
-              <span ref={btnRef} onClick={onOpen}>
-                <CalenderIcon />
-              </span>
-              <Drawer
-                isOpen={isOpen}
-                placement="right"
-                onClose={onClose}
-                finalFocusRef={btnRef}
-              >
-                <DrawerOverlay />
-                <DrawerContent>
-                  <DrawerCloseButton color="#FFF" outline="none" />
-                  <DrawerHeader
-                    bg="#171717"
-                    color="#FFF"
-                    fontSize="16px"
-                    fontWeight="600"
-                    fontFamily="Euclid Circular B"
-                  >
-                    Calender
-                  </DrawerHeader>
-
-                  <DrawerBody bg="#0D0D0D" pt="19px">
-                    <Calender />
-                  </DrawerBody>
-                </DrawerContent>
-              </Drawer>
-              <Notification />
-            </Flex>
-
-            <Flex alignItems="center" gap="14px" cursor="pointer">
-              <Profile />
+      <Box width="100%">
+        <Box
+          pl={{ lg: "78px", base: "20px" }}
+          pr={{ lg: "78px", base: "20px" }}
+          pt="22px"
+          pb="22px"
+          bg="#191919"
+          boxShadow="0px 4px 8px 0px rgba(0, 0, 0, 0.02)"
+        >
+          <Flex alignItems="center" justifyContent="space-between">
+            <Box cursor="pointer">
+              <VeergeLogo />
               <Text
-                color="#fff"
-                fontSize="16px"
-                fontWeight="500"
-                fontFamily="Euclid Circular B"
+                fontSize="14px"
+                fontWeight="400"
+                color="#FFF"
+                fontFamily="Proxima Nova"
               >
-                Ahmed Ali
+                For Mainstone
               </Text>
-              {!showCard && (
-                <span
-                  onClick={() => {
-                    setShowCard(!showCard);
-                  }}
+            </Box>
+            <Flex gap="45px">
+              <Box display={{ base: "none", lg: "inline" }}>
+                <Flex alignItems="center" gap="24px" cursor="pointer">
+                  <Add />
+                  <span ref={btnRef} onClick={onOpen}>
+                    <CalenderIcon />
+                  </span>
+                  <Drawer
+                    isOpen={isOpen}
+                    placement="right"
+                    onClose={onClose}
+                    finalFocusRef={btnRef}
+                  >
+                    <DrawerOverlay />
+                    <DrawerContent>
+                      <DrawerCloseButton color="#FFF" outline="none" />
+                      <DrawerHeader
+                        bg="#171717"
+                        color="#FFF"
+                        fontSize="16px"
+                        fontWeight="600"
+                        fontFamily="Euclid Circular B"
+                      >
+                        Calender
+                      </DrawerHeader>
+
+                      <DrawerBody bg="#0D0D0D" pt="19px">
+                        <Calender />
+                      </DrawerBody>
+                    </DrawerContent>
+                  </Drawer>
+                  <Notification />
+                </Flex>
+              </Box>
+
+              <Flex alignItems="center" gap="14px" cursor="pointer">
+                <Box display={{lg:"inline",base:"none"}}>
+                  <Profile />
+                </Box>
+                <Text
+                  color="#fff"
+                  fontSize="16px"
+                  fontWeight="500"
+                  fontFamily="Euclid Circular B"
                 >
-                  <Frame />
-                </span>
-              )}
-              {showCard && (
-                <span
-                  onClick={() => {
-                    setShowCard(!showCard);
-                  }}
-                >
-                  <IoMdArrowDropdown color="#FFF" fontSize="24px" />
-                </span>
-              )}
+                  Ahmed Ali
+                </Text>
+                {!showCard && (
+                  <span
+                    onClick={() => {
+                      setShowCard(!showCard);
+                    }}
+                  >
+                    <Frame />
+                  </span>
+                )}
+                {showCard && (
+                  <span
+                    onClick={() => {
+                      setShowCard(!showCard);
+                    }}
+                  >
+                    <IoMdArrowDropdown color="#FFF" fontSize="24px" />
+                  </span>
+                )}
+              </Flex>
             </Flex>
           </Flex>
-        </Flex>
-      </Box>
-      {showCard && (
-        <Box position="absolute" top="80px" right="50px" zIndex="3">
-          <ProfileCard />
         </Box>
-      )}
+        {showCard && (
+          <Box position="absolute" top="80px" right="50px" zIndex="3">
+            <ProfileCard />
+          </Box>
+        )}
+      </Box>
     </>
   );
 };

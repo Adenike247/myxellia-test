@@ -9,7 +9,7 @@ const OutstandingCard = () => {
   return (
     <>
       <Box
-        width="418px"
+        maxWidth="580px"
         bg="#FFF"
         boxShadow="0px 4px 8px 0px rgba(0, 0, 0, 0.02)"
         borderRadius="16px"
@@ -17,6 +17,7 @@ const OutstandingCard = () => {
         pr="18px"
         pt="25px"
         pb="18px"
+        width={{ base: "387px", lg: "418px" }}
       >
         <Box
           display="flex"
@@ -104,7 +105,7 @@ const OutstandingCard = () => {
               mt="25px"
               alignItems="center"
               position="relative"
-              left="55%"
+              left={{lg:"55%",base:"37%"}}
             >
               <Text>1/5</Text>
               <Flex gap="8px">

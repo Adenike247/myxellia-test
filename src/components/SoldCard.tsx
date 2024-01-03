@@ -16,6 +16,8 @@ const SoldCard = () => {
         pr="58px"
         pt="16px"
         pb="18px"
+        maxHeight="325px"
+        width={{ base: "387px", lg: "345px" }}
       >
         <Text
           color="#12D8A0"
@@ -37,14 +39,14 @@ const SoldCard = () => {
         <Text color="#606060" fontSize="14px" fontWeight="400">
           Total Sold
         </Text>
-        <Flex gap="19px" mt="14px" pb="60px">
+        <Flex gap={{ lg: "19px", md: "40px" }} mt="14px" pb="60px">
           <Box
             width="154px"
             borderRadius="12px"
             bg="#F5F5F5"
             display="grid"
-                      placeItems="center"
-                      height="175px"
+            placeItems="center"
+            height="175px"
           >
             <ImageIcon />
           </Box>
@@ -78,7 +80,7 @@ const SoldCard = () => {
             </Box>
           </Box>
         </Flex>
-        <Box position="absolute" bottom="135px" left="160px">
+        <Box position="absolute" bottom="75px" left="160px">
           <Box
             padding="15px"
             display="flex"
