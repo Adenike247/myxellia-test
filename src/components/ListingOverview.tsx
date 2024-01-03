@@ -14,7 +14,7 @@ const ListingOverview = () => {
         pr="16px"
         pt="13px"
         pb="38px"
-        width={{ base: "500px", lg: "500px" }}
+        width={{ base: "387px", lg: "500px" }}
       >
         <Text fontWeight="600" fontSize="18px" fontFamily="Euclid Circular B">
           Listing Overview
