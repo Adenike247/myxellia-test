@@ -17,7 +17,7 @@ const SoldCard = () => {
         pt="16px"
         pb="18px"
         maxHeight="325px"
-        width={{ base: "387px", lg: "345px" }}
+        width={{ base: "387px", lg: "500px" }}
       >
         <Text
           color="#12D8A0"

@@ -17,7 +17,7 @@ const OutstandingCard = () => {
         pr="18px"
         pt="25px"
         pb="18px"
-        width={{ base: "387px", lg: "418px" }}
+        width={{ base: "500px", lg: "418px" }}
       >
         <Box
           display="flex"
