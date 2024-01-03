@@ -39,7 +39,7 @@ const SoldCard = () => {
         <Text color="#606060" fontSize="14px" fontWeight="400">
           Total Sold
         </Text>
-        <Flex gap={{ lg: "19px", md: "40px" }} mt="14px" pb="60px">
+        <Flex gap="19px" mt="14px" pb="60px">
           <Box
             width="154px"
             borderRadius="12px"
